@@ -60,12 +60,10 @@
               <a><img src="images/group.png">Groups</a>
               <a><img src="images/marketplace.png">Market place</a>
               <a><img src="images/watch.png">Shows</a>
-              <a>Latest News</a>
+            
             </div>
           </div>
-          <div class="profile">
-            <div id="user-info"></div>
-          </div>
+          
       </div>
      
           <!--------------------------feed---------------------------------------->
@@ -78,36 +76,25 @@
             </div>
           </div>
           <div class="post-text">
-            <input type="text" placeholder="what's on your mind" />
+            <input type="text" placeholder="what's on your mind" id="postInput" />
           </div>
           <div class="post-icons">
-            <a><img src="images/live-video.png" />live Video</a>
-            <a><img src="images/photo.png" />Image/Video</a>
+            <a id="makePost"><img src="images/upload.png" />Post</a>
+            
             <a><img src="images/feeling.png" />Fellings/Emotions</a>
           </div>
         </div>
-        <div class="feed">
-            <div class="profile-user">
-                <img src="images/profile.png">
-                <div class="profile-description">
-                    <p>John carter</p>
-                    <p>June 21st 2023, 10:42 am</p>
-                </div>
-            </div>
-
-            <div class="feed-description">
-                <p>Today with Traveled the campus of Trent university in the, Today with Traveled the campus of Trent university in the  </p>
-                <p class="hashtags">#university #creativity </p>
-            </div>
-            
-        </div>
+        
       </div>
 
-      <div class="right-side"></div>
+      <div class="right-side">
+        <button id="log-out">Log out</button>
+      </div>
     </div>
 
     <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
     <script src="profile.js"></script>
   </body>
 </html>
