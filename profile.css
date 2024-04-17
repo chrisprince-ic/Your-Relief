@@ -316,3 +316,54 @@ nav{
 
 
 
+@media (max-width: 1000px) {
+
+    .right-sidebar{
+        display:none;
+    }
+
+    .left-sidebar{
+        display:none;
+    }
+    nav{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        width:100%;
+    }
+    .search-box{
+        display: none;
+    }
+    .logo{
+       width:90px;
+    }
+    .left-nav ul li img{
+        width:20px;
+        margin:0px 3px;
+    }
+    .nav-users-icon img{
+        width:30px;
+        
+    }
+    .main-side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+      padding:0;
+         
+    }
+    .right-side{
+        display: none;
+    }
+    .feed, .posting-section{
+        width: 100%;
+    
+    }
+
+}
+
+
+
+
