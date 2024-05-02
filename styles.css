@@ -1,22 +1,33 @@
 body {
     font-family: Arial, sans-serif;
    
-
+  background-color: rgb(21, 14, 85);
     margin: 0;
 }
-
-.container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    height: 100vh;
-
-}
-.left-side{
-    background-color: rgb(81, 0, 255);
+.container{
+    padding: 5em;
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.login-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 75vh;
+    width: 70%;
+    border-radius: 1em;
+   background-color: aliceblue;
+
+}
+.left-side{
+    background-color: rgb(99, 82, 250);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1em;
 }
 .left-side img{
     width:20em;
@@ -28,8 +39,8 @@ button {
     background-color: rgb(242, 242, 242); 
     color:black;
     border:none;
-    
-    border-radius: 10em;
+    margin-top: 5em;
+    border-radius: 0.5em;
     padding: 1em 2em;
     font-size: 16px;
     cursor: pointer;
@@ -37,7 +48,71 @@ button {
     text-align: center;
     justify-content: center;
     align-items: center;
+    border: 3px solid rgb(51, 51, 51);
 }
 button img{
     margin-right: 1em;
+}
+
+
+/********************small screens****************/
+
+@media only screen and (max-width: 768px) {
+    .container{
+        padding: 2em;
+    }
+    .login-container {
+        display: flex;
+       flex-direction: column;
+        height: 80vh;
+        width: 100%;
+        border-radius: 1em;
+       background-color: aliceblue;
+       padding:2em;
+    
+    }
+    .login-container .left-side img{
+        width: 60%;
+    }
+    .left-side{
+        background-color: rgb(99, 82, 250);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1em;
+    }
+    button{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .container{
+        padding: 2em;
+    }
+    .login-container {
+        display: flex;
+       flex-direction: column;
+        height: 80vh;
+        width: 100%;
+        border-radius: 1em;
+       background-color: aliceblue;
+       padding:2em;
+    
+    }
+    .login-container .left-side img{
+        width: 40%;
+    }
+    .left-side{
+        background-color: rgb(99, 82, 250);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1em;
+    }
+    button{
+        width: 100%;
+    }
 }
